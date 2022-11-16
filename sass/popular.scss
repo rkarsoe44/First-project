@@ -1,0 +1,107 @@
+
+:root{
+    --body-fonts:'Poppins', sans-serif;
+    --title-fonts:'Lora', serif;
+    --subtitle-fonts:'Dancing Script', cursive;
+}
+
+//======color======//
+:root{
+    --first-color:#f4a261;
+    --text-color:#6c584c;
+    --body-color:hsl(19,100%,96%);
+    --body2-color:hsl(19,100%,97%)
+}
+// =================
+.forh3{
+    font-size: 30px;
+    color: var(--first-color);
+    text-align: center;
+    margin-top: 40px;
+    font-family: var(--subtitle-fonts);
+}
+.forh4{
+    font-size: 30px;
+    color: var(--text-color);
+    text-align: center;
+    font-family: var(--title-fonts);
+    margin-bottom: 100px;
+}
+///=====card======///
+.card-1{
+    
+    box-shadow:0px 20px 10px rgba(62, 62, 62, 0.063);
+}
+.card-2{
+    box-shadow:0px 20px 10px rgba(62, 62, 62, 0.063);
+}
+.card-3{
+    box-shadow:0px 20px 10px rgba(219, 219, 219, 0.432);
+}
+///====img=====///
+.Popular-img{
+    margin-top: -50px;
+    width: 80%;
+}
+.title{
+    font-family: var(--title-fonts);
+    font-size: 18px;
+    margin-bottom: 2px;
+}
+.title-1{
+    font-size: 15px;
+    color: var(--text-color);
+    font-weight: normal;
+}
+.shopping-card{
+    font-size: 20px;
+    color: var(--first-color);
+    font-family:var(--body-fonts);
+    
+}
+.shopping-logo{
+    margin: 0px;
+    width: 30px;
+    color: white;
+    font-size: 20px;
+    height: 30px;
+    border-radius: 50%;
+    background:var(--first-color);
+}
+//========animatin==========//
+.animtion-1,.animtion-2,.animtion-3{
+    animation-name: todown;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 1;
+    animation-direction: alternate;
+    transition-timing-function: linear;
+    animation-fill-mode: forwards;
+}
+.animtion-2{
+    animation-delay: 0.1s;
+}
+.animtion-3{
+    animation-delay: 0.3s;
+    transition:2s;
+}
+@keyframes todown{
+    from{
+        transform: translateY(-50px);
+        opacity: 0%;
+    }
+    to{
+        transform: translateY(0px);
+        opacity: 100%;
+
+    }
+}
+.animtion-1:hover .Popular-img{
+    transform: translateY(-10px);
+}
+.animtion-2:hover .Popular-img{
+    transform: translateY(-10px);
+}
+.animtion-3:hover .Popular-img{
+    transform: translateY(-10px);
+}

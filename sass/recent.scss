@@ -1,0 +1,222 @@
+:root{
+    --body-fonts:'Poppins', sans-serif;
+    --title-fonts:'Lora', serif;
+    --subtitle-fonts:'Dancing Script', cursive;
+}
+
+//======color======//
+:root{
+    --first-color:#f4a261;
+    --text-color:#6c584c;
+    --body-color:hsl(19,100%,96%);
+    --body2-color:hsl(19,100%,97%)
+}
+// =================//
+body{
+    width: 100%;
+    height: 100%;
+}
+.recent-title1{
+    font-family: var(--subtitle-fonts);
+    color: #f4a261;
+    font-size: 30px;
+}
+.recent-body{
+    margin-top: 150px;
+}
+.recent-title2{
+    font-size: 40px;
+    font-family: var(--title-fonts);
+}
+.recent-img1{
+    rotate: 40deg;
+    width: 30px;
+    height: 50px;
+}
+.spinach{
+    height: 60px;
+    width: 40px;
+    padding-left: 20px;
+}
+.recent-subtittle{
+    color: #6c584c;
+    width: 350px;
+    font-size: 18px;
+}
+.recentani-1{
+    animation-name: toleft200px;
+    animation-timing-function: ease-out;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-direction: alternate;
+}
+@keyframes toleft200px{
+    from{
+        transform: translateX(-100px);
+        opacity: 0%;
+    }
+    to{
+        transform: translateX(0px);
+        opacity: 100%;
+    }
+}
+.recentani-2{
+    animation-name: toright200px;
+    animation-timing-function: ease-out;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-direction: alternate;
+}
+@keyframes toright200px{
+    from{
+        transform: translateX(100px);
+        opacity: 0%;
+    }
+    to{
+        transform: translateX(0px);
+        opacity: 100%;
+    }
+}
+// ========
+.recent-2{
+    background-color: #6c584c;
+    border-radius: 70px;
+}
+.recentani-3{
+    height: auto;
+}
+.recent-title3{
+    font-family: var(--subtitle-fonts);
+    color: #f4a261;
+}
+.recent-title4{
+    font-size: 40px;
+    font-family: var(--title-fonts);
+    color: white;
+}
+.recentbutton{
+    border-radius: 50px;
+    height: 70px;
+    background: white;
+}
+.form-control{
+    height: 50px;
+}
+.aboutbutton{
+    width: 150px;
+    height: 50px;
+    background-color: #f4a261;
+    font-weight: bold;
+    transition: transform 1s;
+}
+.left-2{
+    height: 100px;
+    width: auto;
+    transform: rotate(50deg)
+}
+.forleft{
+    transform: translate(-100px,-50px) ;
+
+}
+// =============animation==========//
+
+.aboutanimation{
+    margin-top: 150px;
+    animation-name: todown200px;
+    animation-timing-function: ease-out;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-direction: alternate;
+}
+@keyframes todown200px{
+    from{
+        transform: translateY(-10px);
+        opacity: 0%;
+    }
+    to{
+        transform: translateX(0px);
+        opacity: 100%;
+    }
+}
+//======footer==========//
+.footerh1{
+    font-family: var(--title-fonts);
+}
+.footerp-1{
+    font-family: var(--body-fonts);
+    font-size: 15px;
+    width: 200px;
+    font-weight: normal;
+    color: #6c584c;
+    word-spacing: 2px;
+}
+.left-3{
+    height: 50px;
+    width: auto;
+    transform: rotate(45deg)
+}
+.footerh2{
+    font-family: var(--body-fonts);
+    font-size: 15px;
+}
+.footerli{
+    color: #6c584c;
+    font-size: 15px;
+    transition: 0.5s;
+}
+.footerli:hover{
+    color: #f4a261;
+}
+.footericon{
+    color: #f4a261;
+}
+.left-2{
+    height: 70px;
+    width: auto;
+    transform: rotate(50deg)
+}
+.footerleft{
+    transform: translate(30px,-10px);
+}
+.left-3{
+    height: 50px;
+    width: auto;
+    transform: rotate(-40deg)
+}
+.footerleft-1{
+    transform: translate(-100px,-100px);
+}
+//====footeranim======//
+.footerani{
+    margin-top: 150px;
+    animation-name: todown200px;
+    animation-timing-function: ease-out;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-direction: alternate;
+    animation-delay: 1s;
+}
+@keyframes todown200px{
+    from{
+        transform: translateY(-10px);
+        opacity: 0%;
+    }
+    to{
+        transform: translateX(0px);
+        opacity: 100%;
+    }
+}
+.footerp-2{
+    font-family: var(--body-fonts);
+    font-size: 13px;
+    font-weight: normal;
+    color: #6c584c;
+}
+.li-img{
+    width: 40px;
+    height: auto;
+}

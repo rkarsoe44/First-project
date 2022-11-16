@@ -1,0 +1,107 @@
+//======fonts=====//
+
+:root{
+    --body-fonts:'Poppins', sans-serif;
+    --title-fonts:'Lora', serif;
+    --subtitle-fonts:'Dancing Script', cursive;
+}
+
+//======color======//
+:root{
+    --first-color:#f4a261;
+    --text-color:#6c584c;
+    --body-color:hsl(19,100%,96%);
+    --body2-color:hsl(19,100%,97%)
+}
+// =================//
+body{
+    background-color:var(--body-color) ;
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    // overflow: hidden;
+}
+.Aboutbody{
+    margin-top: 200px;
+}
+.abouttitle{
+    font-family: var(--subtitle-fonts);
+    color: #ff9e4f;
+}
+.about-title{
+    font-family: var(--title-fonts);
+    font-size: 50px;
+}
+.about-img{
+    width: 50px;
+    height: 50px;
+}
+.about-subtittle{
+    width: 430px;
+    font-size: 17px;
+    color: #6c584c;
+    font-family: var(--body-fonts);
+}
+.width-1{
+    width: 40%;
+}
+.width-2{
+    width: 40%;
+}
+.body-img-3{
+    position: absolute;
+    transform: translate(1672px,-300px) rotate(340deg);
+    width: 200px;
+    height: auto;
+    opacity: 50%;
+}
+.forh1{
+    font-size: 30px;
+    color: var(--first-color);
+    text-align: center;
+    margin-top: 130px;
+    font-family: var(--subtitle-fonts);
+}
+.forh2{
+    font-size: 30px;
+    color: var(--text-color);
+    text-align: center;
+    font-family: var(--title-fonts);
+}
+//=======animation=======//
+.about-1{
+    animation-name: right;
+    animation-timing-function: ease-out;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-direction: alternate;
+}
+@keyframes right{
+    from{
+        transform: translateX(50px);
+        opacity: 0%;
+    }
+    to{
+        transform: translateX(0px);
+        opacity: 100%;
+    }
+}
+.about-2{
+    animation-name: left;
+    animation-timing-function: ease-out;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-direction: alternate;
+}
+@keyframes left{
+    from{
+        transform: translateX(-50px);
+        opacity: 0%;
+    }
+    to{
+        transform: translateX(30px);
+        opacity: 100%;
+    }
+}
